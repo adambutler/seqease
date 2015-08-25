@@ -18,7 +18,7 @@ require('seaqease')
 var totalFrames = 120;
 var indexNumberLength = 5;
 var inputPrefix = "input_";
-var outputPrefix = "input_";
+var outputPrefix = "output_";
 
 var seqease = new Seqease(totalFrames, indexNumberLength, inputPrefix, outputPrefix);
 console.log(seqease.getRenameCommand());
