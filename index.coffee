@@ -2,9 +2,12 @@ class Seqease
   easeInOutQuad: (t) ->
     (if t < .5 then 2 * t * t else -1 + (4 - 2 * t) * t)
 
+  easeInOutCube: (t) ->
+    if t < .5 then 4 * t * t * t else (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
+
   getTime: (n) ->
     percent = n / @max
-    @easeInOutQuad(percent)
+    @easeInOutCube(percent)
 
   getTimeline: ->
     output = []
