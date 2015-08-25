@@ -13,7 +13,7 @@ ffmpeg -i input.avi -vcodec png input_%05d.png
 Create an script with the following
 
 ```javascript
-require('seaqease')
+require('seqease')
 
 var totalFrames = 120;
 var indexNumberLength = 5;
