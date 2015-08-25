@@ -29,6 +29,10 @@ Doing so will result in a new set of images that represent a PNG sequence with e
 
 You can then convert the new image sequence to a video using `ffmpeg`.
 
+```
+ffmpeg -framerate 60 -i output_%05d.png -s:v 1920x1080 -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p ouput.mp4
+```
+
 ## Contributing
 
 Contributions are welcome, please follow [GitHub Flow](https://guides.github.com/introduction/flow/index.html)
