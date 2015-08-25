@@ -8,7 +8,7 @@ class Seqease
 
   getTimeline: ->
     output = []
-    for n in [0..@max]
+    for n in [1..@max]
       output.push @getTime(n) * @max
     return output
 
