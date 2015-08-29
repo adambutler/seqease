@@ -1,0 +1,28 @@
+{
+  "name": "seqease",
+  "version": "1.0.0",
+  "description": "Easing for linear animations",
+  "main": "lib/seqease.coffee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adambutler/seqease.git"
+  },
+  "keywords": [
+    "animation",
+    "easing",
+    "sequence"
+  ],
+  "author": "Adam Butler <adam@lab.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adambutler/seqease/issues"
+  },
+  "homepage": "https://github.com/adambutler/seqease",
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "commander": "^2.8.1"
+  },
+  "bin": {
+    "seqease": "bin/seqease.js"
+  }
+}
