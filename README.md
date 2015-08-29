@@ -17,11 +17,12 @@ ffmpeg -i input.avi -vcodec png input_%05d.png
 Install seqease -
 
 ```
-npm install seqease
+npm install -g seqease
 ```
 
 Run using the `seqease` command -
 
+```
 > seqease -h
 
   Usage: seqease [options]
@@ -30,14 +31,16 @@ Run using the `seqease` command -
 
     -h, --help                  output usage information
     -V, --version               output the version number
-    -f, --framesQty [qty]       The amount of frames in your animation
+    -n, --framesQty [qty]       The amount of frames in your animation
     -p, --padLength [value]     The length of the digits in your file names
     -i, --inputPrefix [value]   A prefix in the file name of your input files
     -o, --outputPrefix [value]  A prefix in the file name of any output files
-    -d, --deleteOldFrames       Delete the original frames?
-    -r, --deleteNewFrames       Delete the newly generated frames?
-    -x, --width [value]         The width of the movie
-    -y, --height [value]        The height of the movie
+    -r, --reverse               Reverse the animation
+    --deleteOldFrames           Delete the original frames
+    --deleteNewFrames           Delete the newly generated frames
+    --width [value]             The width of the movie
+    --height [value]            The height of the movie
+```
 
 Given valid options an inputs this will produce a new animation `output.mp4` in your current directory.
 
