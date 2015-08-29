@@ -8,6 +8,7 @@ class Seqease
     deleteOldFrames: false
     width: 1920
     height: 1080
+    reverse: false
 
   easeInOutQuad: (t) ->
     (if t < .5 then 2 * t * t else -1 + (4 - 2 * t) * t)
@@ -36,10 +37,16 @@ class Seqease
     s = "0#{s}" while s.length < @config.padLength
     return s
 
+  outputIndex: (index) ->
+    if @config.reverse
+      return @config.framesQty - index
+    else
+      return index + 1
+
   getRenameInstructionsList: ->
     output = []
     for frame, index in @pickFrames()
-      "cp #{@config.inputPrefix}#{@pad(frame)}.png #{@config.outputPrefix}#{@pad(index + 1)}.png"
+      "cp #{@config.inputPrefix}#{@pad(frame)}.png #{@config.outputPrefix}#{@pad(@outputIndex(index))}.png"
 
   getRenameCommands: ->
     @getRenameInstructionsList().join(" && ")
