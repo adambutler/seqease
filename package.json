@@ -1,6 +1,6 @@
 {
   "name": "seqease",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easing for linear animations",
   "main": "lib/seqease.coffee",
   "repository": {
