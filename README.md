@@ -1,5 +1,7 @@
 # SeqEase
 
+![seqease demo](https://cloud.githubusercontent.com/assets/1238468/9562217/f3a1a7bc-4e5d-11e5-9c9a-d37cf9a98337.gif)
+
 SeqEase takes a linear animation in the form of a PNG sequence and allows you to create a new PNG sequence with easing applied.
 
 ### Usage
@@ -13,12 +15,12 @@ ffmpeg -i input.avi -vcodec png input_%05d.png
 Create an script with the following
 
 ```javascript
-require('seaqease')
+require('seqease')
 
 var totalFrames = 120;
 var indexNumberLength = 5;
 var inputPrefix = "input_";
-var outputPrefix = "input_";
+var outputPrefix = "output_";
 
 var seqease = new Seqease(totalFrames, indexNumberLength, inputPrefix, outputPrefix);
 console.log(seqease.getRenameCommand());
