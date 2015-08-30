@@ -42,7 +42,7 @@ Run using the `seqease` command -
     --height [value]            The height of the movie
 ```
 
-Given valid options an inputs this will produce a new animation `output.mp4` in your current directory.
+Given valid options and inputs this will produce a new animation `output.mp4` in your current directory.
 
 ## Contributing
 
